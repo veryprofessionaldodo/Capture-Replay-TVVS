@@ -7,74 +7,97 @@
     "id": "d3b2dba2-5056-44d6-aae2-5a50e009a477",
     "name": "Addition",
     "commands": [{
-      "id": "7a2fe7ea-0d10-4cff-9c2a-e6307ef66307",
+      "id": "acef3f5e-6b3b-49bf-a3fa-99c78ce32cfd",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "dbd31e67-3a99-4157-87a2-07c0aea03fc8",
+      "id": "3080c05a-ef82-4362-90ad-3b21ec44020c",
       "comment": "",
       "command": "setWindowSize",
       "target": "939x1031",
       "targets": [],
       "value": ""
     }, {
-      "id": "7ad56ed5-8c16-40f3-8912-da8a81d55765",
+      "id": "b231ed00-f070-4872-9a5f-f55a36e8376c",
       "comment": "",
       "command": "click",
       "target": "name=two",
       "targets": [
         ["name=two", "name"],
-        ["css=tr:nth-child(2) > td:nth-child(2) > input", "css:finder"],
+        ["css=tr:nth-child(1) > td:nth-child(2) > input", "css:finder"],
         ["xpath=//input[@name='two']", "xpath:attributes"],
+        ["xpath=//div[@id='calculator_id']/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
         ["xpath=//td[2]/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "b06473d2-ab3d-4326-9e11-0a8b491aa52b",
+      "id": "f576b1b4-048a-46a6-a2d3-e1227c3c1c95",
       "comment": "",
       "command": "click",
       "target": "name=plus",
       "targets": [
         ["name=plus", "name"],
-        ["css=tr:nth-child(2) .operator", "css:finder"],
+        ["css=tr:nth-child(1) .operator", "css:finder"],
         ["xpath=//input[@name='plus']", "xpath:attributes"],
+        ["xpath=//div[@id='calculator_id']/form/table/tbody/tr/td[4]/input", "xpath:idRelative"],
         ["xpath=//td[4]/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "d4243b0e-beb7-4b98-9af0-01d2cf7086cd",
+      "id": "ad47fd56-04c9-4c2d-b9fb-42eddf42046d",
       "comment": "",
       "command": "click",
       "target": "name=two",
       "targets": [
         ["name=two", "name"],
-        ["css=tr:nth-child(2) > td:nth-child(2) > input", "css:finder"],
+        ["css=tr:nth-child(1) > td:nth-child(2) > input", "css:finder"],
         ["xpath=//input[@name='two']", "xpath:attributes"],
+        ["xpath=//div[@id='calculator_id']/form/table/tbody/tr/td[2]/input", "xpath:idRelative"],
         ["xpath=//td[2]/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "2d07ff18-a220-4d98-89eb-73297169a5e9",
+      "id": "783e09b6-ed11-41a6-b75c-bc67005102bc",
       "comment": "",
       "command": "click",
       "target": "name=doit",
       "targets": [
         ["name=doit", "name"],
-        ["css=tr:nth-child(5) > td:nth-child(3) > input", "css:finder"],
+        ["css=tr:nth-child(4) > td:nth-child(3) > input", "css:finder"],
         ["xpath=//input[@name='doit']", "xpath:attributes"],
-        ["xpath=//tr[5]/td[3]/input", "xpath:position"]
+        ["xpath=//div[@id='calculator_id']/form/table/tbody/tr[4]/td[3]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[3]/input", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "18dc3df5-5880-4879-9333-2d96d6111c0d",
+      "id": "57fce562-8d02-4464-ab3c-af92ce18b3ac",
       "comment": "",
-      "command": "close",
-      "target": "",
-      "targets": [],
-      "value": ""
+      "command": "verifyText",
+      "target": "id=display",
+      "targets": [
+        ["id=display", "id"],
+        ["css=#display", "css:finder"],
+        ["xpath=//textarea[@id='display']", "xpath:attributes"],
+        ["xpath=//div[@id='calculator_id']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "4"
+    }, {
+      "id": "5f14b0cb-bad2-43d3-80ae-6508516c5c57",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=display",
+      "targets": [
+        ["id=display", "id"],
+        ["css=#display", "css:finder"],
+        ["xpath=//textarea[@id='display']", "xpath:attributes"],
+        ["xpath=//div[@id='calculator_id']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "5"
     }]
   }],
   "suites": [{
