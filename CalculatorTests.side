@@ -2,15 +2,80 @@
   "id": "b63f65a0-7aca-4059-83d9-ee39086aba0d",
   "version": "2.0",
   "name": "CalculatorTests",
-  "url": "",
+  "url": "http://localhost:1111",
   "tests": [{
-    "id": "f59d5fc1-b551-4d09-9f1f-d4021444f822",
-    "name": "Division",
-    "commands": []
-  }, {
     "id": "d3b2dba2-5056-44d6-aae2-5a50e009a477",
     "name": "Addition",
-    "commands": []
+    "commands": [{
+      "id": "7a2fe7ea-0d10-4cff-9c2a-e6307ef66307",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dbd31e67-3a99-4157-87a2-07c0aea03fc8",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "939x1031",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7ad56ed5-8c16-40f3-8912-da8a81d55765",
+      "comment": "",
+      "command": "click",
+      "target": "name=two",
+      "targets": [
+        ["name=two", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='two']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b06473d2-ab3d-4326-9e11-0a8b491aa52b",
+      "comment": "",
+      "command": "click",
+      "target": "name=plus",
+      "targets": [
+        ["name=plus", "name"],
+        ["css=tr:nth-child(2) .operator", "css:finder"],
+        ["xpath=//input[@name='plus']", "xpath:attributes"],
+        ["xpath=//td[4]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d4243b0e-beb7-4b98-9af0-01d2cf7086cd",
+      "comment": "",
+      "command": "click",
+      "target": "name=two",
+      "targets": [
+        ["name=two", "name"],
+        ["css=tr:nth-child(2) > td:nth-child(2) > input", "css:finder"],
+        ["xpath=//input[@name='two']", "xpath:attributes"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d07ff18-a220-4d98-89eb-73297169a5e9",
+      "comment": "",
+      "command": "click",
+      "target": "name=doit",
+      "targets": [
+        ["name=doit", "name"],
+        ["css=tr:nth-child(5) > td:nth-child(3) > input", "css:finder"],
+        ["xpath=//input[@name='doit']", "xpath:attributes"],
+        ["xpath=//tr[5]/td[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "18dc3df5-5880-4879-9333-2d96d6111c0d",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
   }],
   "suites": [{
     "id": "1c031e0b-95e3-49bb-b2f9-d6af9de54ace",
@@ -18,8 +83,8 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["f59d5fc1-b551-4d09-9f1f-d4021444f822"]
+    "tests": []
   }],
-  "urls": [],
+  "urls": ["http://localhost:1111/"],
   "plugins": []
 }
