@@ -13,7 +13,7 @@ body {
     padding-right: 10px;
   }
   
-  input {
+  input, legend {
     outline: 0;
     position: relative;
     left: 5px;
@@ -68,7 +68,6 @@ body {
   }
   
   #display:hover {
-    width: 270px;
     font-size: 26px;
     text-align: right;
     background-color: #bcbd95;
@@ -76,8 +75,6 @@ body {
   }
   
   #display:active {
-    top: 5px;
-    width: 270px;
     font-size: 26px;
     text-align: right;
     background-color: #bcbd95;

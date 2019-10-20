@@ -1,0 +1,25 @@
+{
+  "id": "b63f65a0-7aca-4059-83d9-ee39086aba0d",
+  "version": "2.0",
+  "name": "CalculatorTests",
+  "url": "",
+  "tests": [{
+    "id": "f59d5fc1-b551-4d09-9f1f-d4021444f822",
+    "name": "Division",
+    "commands": []
+  }, {
+    "id": "d3b2dba2-5056-44d6-aae2-5a50e009a477",
+    "name": "Addition",
+    "commands": []
+  }],
+  "suites": [{
+    "id": "1c031e0b-95e3-49bb-b2f9-d6af9de54ace",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["f59d5fc1-b551-4d09-9f1f-d4021444f822"]
+  }],
+  "urls": [],
+  "plugins": []
+}
