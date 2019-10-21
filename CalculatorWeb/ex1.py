@@ -9,4 +9,4 @@ def index():
     return render_template('calculator1.html')
 
 if __name__ == '__main__':
-    app.run(debug=False, port=int(os.getenv('PORT', 1111)))
+    app.run(debug=False, port=int(os.getenv('PORT', 5000)))
